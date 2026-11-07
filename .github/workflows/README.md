@@ -9,9 +9,7 @@ For CI builds and artifacts, see the "CI Automated Builds" and "Known Limitation
 | `ci.yml` | push/PR touching `app/**` | Android debug checks + unit tests |
 | `android-release.yml` | tag `v*` | signed release APK/AAB → GitHub Release |
 | `beta.yml` | manual / preview tags | preview APK |
-| `pc.yml` | push/PR touching `core/**` `cli/**` `desktop/**` | PC tests + CLI dists (linux/windows/macos) + desktop packages (deb+rpm / msi+exe / dmg) |
-| `pc-release.yml` | tag `pc-v*` or manual | all PC artifacts attached to one GitHub Release |
-| `docs-deploy.yml`, `sync-*.yml` | push | docs site + mirrors |
+| `sync-models.yml` | daily cron | refreshed provider/model metadata under `data/` |
 
 ## Required GitHub Secrets
 
